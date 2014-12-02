@@ -1,0 +1,29 @@
+[user]
+  name  = "hisashi"
+  email = "sh09dhsashi@gmail.com"
+[core]
+  autocrlf     = false
+  safecrlf     = false
+  excludesfile = /home/hayashi/.gitignore
+  editor       = vim -c \"set fenc=utf-8\"
+[github]
+  user  = "hisashi-hayashi"
+  token = "TODO: please specify token"
+[color]
+  ui          = true
+  diff        = auto
+  status      = auto
+  branch      = auto
+  interactive = auto
+[alias]
+  st    = status
+  df    = diff
+  ad    = add
+  amend = commit --amend
+  co    = checkout
+  br    = branch
+  cpull =!git pull origin `git rev-parse --abbrev-ref HEAD`#カレントブランチを pull する
+  cpush =!git push origin `git rev-parse --abbrev-ref HEAD`#カレントブランチを push する
+[merge]
+  ff   = false
+  tool = vimdiff3
