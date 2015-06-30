@@ -3,7 +3,11 @@ set shiftwidth=2
 set expandtab
 set nocompatible
 set number
-syntax on
+set hlsearch
+set enc=utf-8
+set fenc=utf-8
+set fileformats=unix,dos,mac
+
 filetype on
 filetype indent on
 filetype plugin on
@@ -44,6 +48,10 @@ nmap bb obinding.pry<Esc>
 " F4/F5: コピペモード/戻す
 map <F4>  :set paste <CR>:set nonu <CR>
 map <F5>  :set nopaste <CR>:set nu <CR>
+
+" Ctrl + ↑: カウントアップ, Ctrl + ↓: カウントダウン
+nnoremap <C-Up> <C-a>
+nnoremap <C-Down> <C-x>
 
 " Ctrl + a: 対応するスペックファイルとの切り替え
 map <C-a> :A <CR>
@@ -89,3 +97,8 @@ nnoremap q b
 
 " 保存時に行末の空白を除去する
 autocmd BufWritePre * :%s/\s\+$//ge
+
+" 前回終了したカーソル行に移動
+autocmd BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g`\"" | endif
+
+syntax on
