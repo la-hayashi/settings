@@ -1,13 +1,13 @@
 [user]
-  name  = "hisashi"
-  email = "sh09dhsashi@gmail.com"
+  name  = "hayashi"
+  email = ""
 [core]
   autocrlf     = false
   safecrlf     = false
-  excludesfile = /home/hayashi/.gitignore
+  excludesfile = $HOME/.gitignore
   editor       = vim -c \"set fenc=utf-8\"
 [github]
-  user  = "hisashi-hayashi"
+  user  = "hayashi"
   token = "TODO: please specify token"
 [color]
   ui          = true

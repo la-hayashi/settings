@@ -5,10 +5,4 @@ spec_report.html
 coverage/
 /log/*.log
 .rvmrc
-.bash_history
-.bash_logout
-.bash_profile
-.cache/
-.ssh/
-.vim/
-.viminfo
+tags

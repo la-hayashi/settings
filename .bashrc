@@ -11,6 +11,7 @@ alias gp="git pull"
 alias ex="exit"
 alias rspec="bundle exec rspec -c -fd"
 alias rebash="exec ${SHELL} -l"
+alias mysql='mysql -u root -p'
 
 # Console settings
 if [ -f ~/.git-completion.bash ]; then

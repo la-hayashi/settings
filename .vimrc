@@ -7,6 +7,7 @@ set hlsearch
 set enc=utf-8
 set fenc=utf-8
 set fileformats=unix,dos,mac
+set backspace=indent,eol,start
 
 filetype on
 filetype indent on
@@ -34,6 +35,7 @@ NeoBundle 'The-NERD-Commenter'
 NeoBundle 'rails.vim'
 NeoBundle 'The-NERD-tree'
 NeoBundle 'scrooloose/syntastic.git'
+NeoBundle 'szw/vim-tags'
 
 call neobundle#end()
 
@@ -64,6 +66,8 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
+
+nnoremap <C-d> :NERDTree <CR>
 
 " Ctrk + z: 各ペインのウィンドウサイズをリセット
 
